@@ -1,0 +1,123 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%----------------------------------------------------------------
+% CONFIGURATIONS
+%----------------------------------------------------------------
+% A4纸张大小默认情况下，'letterpaper'使用信纸
+\documentclass[11pt, a4paper,AutoFakeBold]{awesome-cv}
+
+% 使用geometry配置页边距
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% 指定包含字体的位置
+\fontdir[fonts/]
+
+% 高光颜色
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% 如果要指定自己的颜色，请取消注释
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% 文本的颜色
+% 如果要指定自己的颜色，请取消注释
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% 如果您不想突出显示具有令人敬畏的颜色的部分，请设置为false
+\setbool{acvSectionColorHighlight}{true}
+
+% 如果要将社交信息分隔符从“|”更改为其他内容
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%----------------------------------------------------------------
+%	如果要将社交信息分隔符从“|”更改为其他内容
+%	如果不需要，请注释下面的任何一行
+%----------------------------------------------------------------
+% 可用选项: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./examples/profile}
+\name{姓}{名}
+\position{软件架构师{\enskip\cdotp\enskip}安全专家}
+\address{英国伦敦贝克街221号}
+
+\mobile{(+86) 166-6666-6666}
+\email{posquit0.bj@gmail.com}
+\homepage{www.posquit0.com}
+\github{posquit0}
+\linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\quote{``成为你想在世界上看到的改变。"}
+
+
+%----------------------------------------------------------------
+%	信件信息
+%	必须填写以下所有行
+%----------------------------------------------------------------
+% 申请的公司
+\recipient
+  {公司招聘团队}
+  {谷歌公司。\\1600竞技场公园道\\加利福尼亚州山景城94043}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{软件工程师职位申请表}
+% How the letter is opened
+\letteropening{尊敬的姓氏先生/女士/博士：，}
+% How the letter is closed
+\letterclosing{真诚的,}
+% 这封信有附件吗
+\letterenclosure[附件]{简历}
+
+
+%----------------------------------------------------------------
+\begin{document}
+
+% 打印具有以上个人信息的标题
+% 提供可选参数以更改对齐方式(C: center, L: left, R: right)
+\makecvheader[R]
+
+% 打印带有3个参数的页脚(<left>, <center>, <right>)
+% 如果不需要，请将其中任何一项留空
+\makecvfooter
+  {\today}
+  {姓名~~~·~~~求职信}
+  {}
+
+% 打印上面有字母信息的标题
+\makelettertitle
+
+%----------------------------------------------------------------
+%	信件内容
+%----------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{个人简介}
+如果他在受苦，他会被认为是在帮助他。两具尸体不一定要容易辨认，但肉眼的噪音。我们活着，不是弧线，而是时间。草莓又硬又薄。他想飞到山上，哪个时间或车辆会飞。我积累了三分之二的铁。精英面前的男孩需要时间，选择和选择。除非你犯了错误，否则你就是一根柱子。这只猫和那只猫都又瘦又瘦。
+
+\lettersection{为什么选择谷歌？}
+紧握着，你们的群众都紧紧地抱着，锐利的兰花，奔跑着时间为恨雪的植物。有时下雪是为了讨厌苏打水和闻到灰尘的味道。毛里斯是一个共同的联系。在圣歌开始的时候，我们社区的海滩上的班级往往保持安静。这些漏洞被暂停，除非车辆是不同的，而不是两个星期的时间。Phasellus和urn是帮手。但是他们讨厌它，他们讨厌它。在他什么都不知道之前，他需要被喂养，像蕾丝一样痛苦。猪是瘦的，狮子被认为是鸟，猫是鸟，生命是鸟的床，他不想。生活在不同的人手中。
+
+\lettersection{为什么选择我？}
+前面有两个大的，还有苏打钻石。埃涅亚将被视为笑箭之门。同时，当他们被涂上不同的皮肤时，一本钠的大本子被撕破了，因此生育能力现在被预见者所恐惧。我们恨恶狮子，为你们哀哭，使你们惧怕。现在，我要睡觉了。他想成为一个大苏打水，但他想买一颗钻石。
+
+\end{cvletter}
+
+
+%----------------------------------------------------------------
+% 打印带有上述信件信息的签名和附件
+\makeletterclosing
+
+\end{document}

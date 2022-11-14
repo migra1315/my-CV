@@ -1,0 +1,111 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%----------------------------------------------------------------
+% CONFIGURATIONS
+%----------------------------------------------------------------
+% A4纸张大小默认情况下，'letterpaper'使用信纸
+\documentclass[11pt, a4paper,AutoFakeBold]{awesome-cv}
+% \documentclass[a4paper]{article}
+\usepackage[UTF8]{ctex}
+
+% 使用geometry配置页边距
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+ 
+% 指定包含字体的位置
+% \fontdir[fonts/]
+
+% 高光颜色
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-red}
+% 如果要指定自己的颜色，请取消注释
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% 文本的颜色
+% 如果要指定自己的颜色，请取消注释
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+% \setbool{acvSectionColorHighlight}{true}
+
+% 如果要将社交信息分隔符从“|”更改为其他内容
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%----------------------------------------------------------------
+%	如果要将社交信息分隔符从“|”更改为其他内容
+%	如果不需要，请注释下面的任何一行
+%----------------------------------------------------------------
+% 可用选项: circle|rectangle,edge/noedge,left/right
+\photo[circle,edge,left]{./examples/profile.jpg}
+\name{纪宇}{}
+% \position{目标岗位{\enskip\cdotp\enskip}EEDP}
+% \position{目标岗位{\enskip\cdotp\enskip}算法工程师}
+
+\address{中共党员, 1999年2月生于山东省德州市\\山东大学控制科学与工程专业硕士}
+
+
+\mobile{195 1018 4095}
+\email{jiyu@mail.sdu.edu.cn}
+% \homepage{www.posquit0.com}
+\github{migra1315}
+% \linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``成为你想在世界上看到的改变。"}
+
+
+%----------------------------------------------------------------
+\begin{document}
+
+% 打印具有以上个人信息的标题
+% 提供可选参数以更改对齐方式(C: center, L: left, R: right)
+\makecvheader
+
+% 打印带有3个参数的页脚(<left>, <center>, <right>)
+% 如果不需要，请将其中任何一项留空
+\makecvfooter
+  {}
+  {纪宇~~~·~~~求职简历}
+  {\thepage}
+
+
+
+%----------------------------------------------------------------
+%	CV 目录
+%	每个部分是单独导入的，依次打开每个文件修改内容
+%----------------------------------------------------------------
+\input{cv/education.tex}
+\input{cv/skills.tex}
+\input{cv/experience.tex}
+% \input{cv/committees.tex}
+\newpage
+\input{cv/honors.tex}
+% \input{cv/extracurricular.tex}
+% \input{cv/presentation.tex}
+% \input{cv/writing.tex}
+\cvsection{Pub List}
+
+[1] \textbf{Y. Ji}, Z. Zhu and Y. Wei, "A One-Shot Lung 4D-CT Image Registration Method with Temporal-Spatial Features," 2022 IEEE Biomedical Circuits and Systems Conference (BioCAS), 2022「Oral」
+
+[2] \textbf{Y. Ji}, Z. Zhu and Y. Wei, "Fusion-Based Multimodal Medical Image Registration Combining Inter-Modality Metric and Disentanglement," 2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI), 2022
+
+[3] 魏莹, \textbf{纪宇}, "基于多标准融合的多模态医学图像配准方法及系统,"202210095355.8(实质审查)
+
+[4] Z. Zhu, \textbf{Y. Ji} and Y. Wei, "Multi-Resolution Medical Image Registration with Dynamic Convolution," 2022 IEEE Biomedical Circuits and Systems Conference (BioCAS), 2022
+
+[5] Z. Zhu, \textbf{Y. Ji} and Y. Wei, "Lung CT image registration based on end-to-end unsupervised learning," 2021 6th International Conference on Communication, Image and Signal Processing (CCISP), 2021
+%----------------------------------------------------------------
+\end{document}
